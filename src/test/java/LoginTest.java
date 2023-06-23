@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class LoginTest extends TestSase{
+public class LoginTest extends TestSBase {
 
     @BeforeMethod
     public void precondition() {

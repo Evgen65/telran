@@ -2,7 +2,7 @@ import com.microsoft.playwright.*;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TestSase {
+public class TestSBase {
     protected Browser browser;
     protected Page page;
     protected BrowserContext context;

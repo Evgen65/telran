@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class  RegistrationTest extends TestSase {
+public class  RegistrationTest extends TestSBase {
     @BeforeMethod
     public void precondition() {
         if (page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("account-options")).isVisible()) {

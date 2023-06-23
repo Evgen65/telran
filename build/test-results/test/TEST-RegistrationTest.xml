@@ -1,7 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-23T18:44:15" hostname="DESKTOP-ARMCA8P" time="3.07">
+<testsuite name="RegistrationTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2023-06-23T19:26:59" hostname="DESKTOP-ARMCA8P" time="45.463">
   <properties/>
-  <testcase name="registrationUnsuccessfulTest" classname="RegistrationTest" time="3.07"/>
+  <testcase name="registrationSuccessTest" classname="RegistrationTest" time="33.884">
+    <failure message="com.microsoft.playwright.TimeoutError: Error {&#10;  message='Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible&#10;============================================================&#10;  name='TimeoutError&#10;  stack='TimeoutError: Timeout 30000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible&#10;============================================================&#10;    at ProgressController.run (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\progress.js:88:26)&#10;    at Frame.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\frames.js:628:23)&#10;    at FrameDispatcher.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\frameDispatcher.js:98:117)&#10;    at DispatcherConnection.dispatch (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\dispatcher.js:319:46)&#10;}" type="com.microsoft.playwright.TimeoutError">com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\frames.js:628:23)
+    at FrameDispatcher.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\frameDispatcher.js:98:117)
+    at DispatcherConnection.dispatch (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\dispatcher.js:319:46)
+}
+	at app//com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+	at app//com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:119)
+	at app//com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1064)
+	at app//com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1054)
+	at app//com.microsoft.playwright.impl.PageImpl.lambda$waitForSelector$91(PageImpl.java:1457)
+	at app//com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at app//com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at app//com.microsoft.playwright.impl.PageImpl.waitForSelector(PageImpl.java:1456)
+	at app//com.microsoft.playwright.Page.waitForSelector(Page.java:7678)
+	at app//RegistrationTest.registrationSuccessTest(RegistrationTest.java:50)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at app//org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at app//org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at app//org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at app//org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at app//org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at app//org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at app//org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base@11.0.16.1/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at app//org.testng.TestRunner.run(TestRunner.java:585)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1069)
+	at app//org.testng.TestNG.run(TestNG.java:1037)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16.1/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible
+============================================================
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for locator(&quot;xpath=(//p[contains(text(),'test_20501431@gmail.com')])[2]&quot;) to be visible
+============================================================
+    at ProgressController.run (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\progress.js:88:26)
+    at Frame.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\frames.js:628:23)
+    at FrameDispatcher.waitForSelector (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\frameDispatcher.js:98:117)
+    at DispatcherConnection.dispatch (C:\Users\uevge\AppData\Local\Temp\playwright-java-797053115891909817\package\lib\server\dispatchers\dispatcher.js:319:46)
+}
+	at app//com.microsoft.playwright.impl.Connection.dispatch(Connection.java:199)
+	at app//com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:181)
+	at app//com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+	... 56 more
+</failure>
+  </testcase>
+  <testcase name="registrationUnsuccessfulTest" classname="RegistrationTest" time="4.047"/>
   <system-out><![CDATA[Alert 'A user with this email already exists!' is present
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

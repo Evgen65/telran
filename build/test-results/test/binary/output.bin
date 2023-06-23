@@ -1,1 +1,4 @@
-;Alert 'A user with this email already exists!' is present
+,Alert 'Signed in successfully?' is present
+8Alert 'Error signing in, please try again.' is present
+#Alert 'Wrong password' is present
+;Alert 'A user with this email already exists!' is present

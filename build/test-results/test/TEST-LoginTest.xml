@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LoginTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-06-23T19:26:35" hostname="DESKTOP-ARMCA8P" time="24.0">
+  <properties/>
+  <testcase name="LoginSuccessfulTest" classname="LoginTest" time="7.243"/>
+  <testcase name="LoginUnSuccessfulTestLogin" classname="LoginTest" time="5.655"/>
+  <testcase name="LoginUnSuccessfulTestPassword" classname="LoginTest" time="5.614"/>
+  <system-out><![CDATA[Alert 'Signed in successfully?' is present
+Alert 'Error signing in, please try again.' is present
+Alert 'Wrong password' is present
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
